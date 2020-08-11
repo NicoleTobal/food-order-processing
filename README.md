@@ -12,7 +12,7 @@ A service for receiving, storing, processing and notifying food orders.
 ## APIs Integrations
 
 - [Dialog Flow](https://cloud.google.com/dialogflow)
-- [Slack] (https://slack.com)
+- [Slack](https://slack.com)
 
 ## Run locally
 
