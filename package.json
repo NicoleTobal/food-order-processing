@@ -1,0 +1,46 @@
+{
+  "name": "food-order-processing",
+  "version": "1.0.0",
+  "description": "A service for receiving, storing, processing and notifying food orders",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "sudo bash init.sh",
+    "start-app": "nodemon --experimental-modules --es-module-specifier-resolution=node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoleTobal/food-order-processing.git"
+  },
+  "author": "Nicole Tobal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoleTobal/food-order-processing/issues"
+  },
+  "homepage": "https://github.com/NicoleTobal/food-order-processing#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
