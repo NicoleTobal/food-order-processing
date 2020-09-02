@@ -19,30 +19,6 @@ export function initializeDeliveryModel(sequelize, Order, Address, Employee) {
       type: Sequelize.BOOLEAN,
       allowNull: false,
       defaultValue: true,
-    },
-    orderId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Order,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
-    },
-    addressId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Address,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
-    },
-    employeeId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Employee,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
     }
   }, {
     sequelize,

@@ -28,14 +28,6 @@ export function initializeEmployeeModel(sequelize, Branch) {
       type: Sequelize.BOOLEAN,
       allowNull: false,
       defaultValue: true,
-    },
-    branchId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Branch,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
     }
   }, {
     sequelize,

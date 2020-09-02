@@ -16,14 +16,6 @@ export function initializeProductFeatureModel(sequelize, ProductFeatureType) {
     },
     description: {
       type: Sequelize.STRING,
-    },
-    productFeatureTypeId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: ProductFeatureType,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
     }
   }, {
     sequelize,

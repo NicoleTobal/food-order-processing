@@ -19,14 +19,6 @@ export function initializeBranchModel(sequelize, Address) {
     },
     notes: {
       type: Sequelize.STRING,
-    },
-    addressId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Address,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
     }
   }, {
     sequelize,

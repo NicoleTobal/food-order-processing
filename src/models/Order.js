@@ -11,22 +11,6 @@ export function initializeOrderModel(sequelize, OrderStatus, Client) {
     },
     notes: {
       type: Sequelize.STRING,
-    },
-    orderStatusId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: OrderStatus,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
-    },
-    clientId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Client,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
     }
   }, {
     sequelize,

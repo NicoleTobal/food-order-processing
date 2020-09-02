@@ -20,22 +20,6 @@ export function initializePickupModel(sequelize, Order, Branch) {
       allowNull: false,
       defaultValue: true,
     },
-    orderId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Order,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
-    },
-    branchId: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: Branch,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
-    },
   }, {
     sequelize,
     modelName: 'Pickup',
